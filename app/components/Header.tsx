@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
 import Image from "next/image";
+import Logo from "./Logo";
 
 const NAV = [
   { label: "HOME", href: "#home" },
@@ -22,13 +23,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const Logo = ()=>{
-    return (
-      <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
-        <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
-      </a>
-    )
-  }
+  
+
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -38,12 +35,12 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
         <Logo />
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-4">
           {NAV.map((n) => (
             <a
               key={n.label}
               href={n.href}
-              className="text-[12px] font-semibold tracking-[0.18em] text-slate-700 hover:text-(--hat-gold) transition-colors relative group"
+              className="text-[12px] font-semibold tracking-[0.15em] text-slate-700 hover:text-(--hat-gold) transition-colors relative group"
             >
               {n.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-(--hat-gold) group-hover:w-full transition-all duration-300"></span>
