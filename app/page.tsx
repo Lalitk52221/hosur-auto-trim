@@ -18,7 +18,7 @@ function Home() {
       <Header />
       <Hero/>
       <Categories/>
-      {/* <About/> */}
+      <About/>
       {/* <Products/> */}
       {/* <Infrastructure/> */}
       {/* <WhyUs/> */}
