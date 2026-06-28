@@ -9,6 +9,7 @@ const CATS = [
   { icon: BadgeCheck, t: 'QUALITY', s: 'Our Commitment' },
   { icon: Lightbulb, t: 'INNOVATION', s: 'Our Strength' },
 ]
+
 export default function Categories() {
   return (
     <section className="bg-slate-50 border-y border-slate-200">

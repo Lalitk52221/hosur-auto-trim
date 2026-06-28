@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
 import Image from "next/image";
+import Logo from "./Logo";
 
 const NAV = [
   { label: "HOME", href: "#home" },
@@ -12,32 +13,7 @@ const NAV = [
   { label: "GALLERY", href: "#gallery" },
   { label: "CONTACT", href: "#contact" },
 ];
-// const Logo = (light=false)=>{
-//     return (
-//       <div className="flex items-center gap-3">
-//       <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
-//         <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
-//       </a>
-//       <div className="leading-tight">
-//         <div className={`font-extrabold tracking-wide text-[15px] ${light?'text-white':'text-(--hat-navy)'}`}>HOSUR AUTO TRIMS</div>
-//         <div className={`text-[11px] tracking-[0.3em] ${light?'text-white/70':'text-slate-500'}`}>PVT. LTD.</div>
-//       </div>
-//     </div>
-//       )
-//     }
-  function Logo() {
-  return (
-    <div className="flex items-center gap-0">
-      <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
-        <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
-      </a>
-      <div className="leading-tight">
-        <div className ="font-extrabold text-[15px] text-blue-950">HOSUR AUTO TRIMS</div>
-        <div className="text-[11px] tracking-[0.3em] 'text-slate-500">PVT. LTD.</div>
-      </div>
-    </div>
-  )
-}
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
