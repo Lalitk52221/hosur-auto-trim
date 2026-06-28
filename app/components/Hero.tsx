@@ -131,6 +131,7 @@ export default function Hero() {
             ISO Certified
           </motion.div>
         </motion.div>
+        
       </div>
     </section>
   );

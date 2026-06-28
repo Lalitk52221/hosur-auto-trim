@@ -12,7 +12,32 @@ const NAV = [
   { label: "GALLERY", href: "#gallery" },
   { label: "CONTACT", href: "#contact" },
 ];
-
+// const Logo = (light=false)=>{
+//     return (
+//       <div className="flex items-center gap-3">
+//       <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
+//         <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
+//       </a>
+//       <div className="leading-tight">
+//         <div className={`font-extrabold tracking-wide text-[15px] ${light?'text-white':'text-(--hat-navy)'}`}>HOSUR AUTO TRIMS</div>
+//         <div className={`text-[11px] tracking-[0.3em] ${light?'text-white/70':'text-slate-500'}`}>PVT. LTD.</div>
+//       </div>
+//     </div>
+//       )
+//     }
+  function Logo() {
+  return (
+    <div className="flex items-center gap-0">
+      <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
+        <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
+      </a>
+      <div className="leading-tight">
+        <div className ="font-extrabold text-[15px] text-blue-950">HOSUR AUTO TRIMS</div>
+        <div className="text-[11px] tracking-[0.3em] 'text-slate-500">PVT. LTD.</div>
+      </div>
+    </div>
+  )
+}
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -22,13 +47,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const Logo = ()=>{
-    return (
-      <a href="#home" className="text-(--hat-navy) font-bold text-lg tracking-widest pt-4">
-        <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
-      </a>
-    )
-  }
+  
+
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -38,12 +59,12 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
         <Logo />
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-4">
           {NAV.map((n) => (
             <a
               key={n.label}
               href={n.href}
-              className="text-[12px] font-semibold tracking-[0.18em] text-slate-700 hover:text-(--hat-gold) transition-colors relative group"
+              className="text-[12px] font-semibold tracking-[0.15em] text-slate-700 hover:text-(--hat-gold) transition-colors relative group"
             >
               {n.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-(--hat-gold) group-hover:w-full transition-all duration-300"></span>
