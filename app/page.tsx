@@ -5,10 +5,10 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
+import Infrastructure from "./components/Infrastructure";
 // import Contact from "./components/Contact";
 // import Customers from "./components/Customers";
 // import Footer from "./components/Footer";
-// import Infrastructure from "./components/Infrastructure";
 // import WhatsAppFloat from "./components/WhatsAppFloat";
 // import WhyUs from "./components/WhyUs";
 
@@ -20,7 +20,7 @@ function Home() {
       <Categories/>
       <About/>
       <Products/>
-      {/* <Infrastructure/> */}
+      <Infrastructure/>
       {/* <WhyUs/> */}
       {/* <Customers/> */}
       {/* <Contact/> */}
