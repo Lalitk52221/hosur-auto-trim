@@ -6,11 +6,11 @@ import About from "./components/About";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
 import Infrastructure from "./components/Infrastructure";
-// import Contact from "./components/Contact";
-// import Customers from "./components/Customers";
-// import Footer from "./components/Footer";
-// import WhatsAppFloat from "./components/WhatsAppFloat";
-// import WhyUs from "./components/WhyUs";
+import Contact from "./components/Contact";
+import Customers from "./components/Customers";
+import Footer from "./components/Footer";
+import WhatsAppFloat from "./components/WhatsAppFloat";
+import WhyUs from "./components/WhyUs";
 
 function Home() {
   return (
@@ -21,11 +21,11 @@ function Home() {
       <About/>
       <Products/>
       <Infrastructure/>
-      {/* <WhyUs/> */}
-      {/* <Customers/> */}
-      {/* <Contact/> */}
-      {/* <Footer/> */}
-      {/* <WhatsAppFloat/> */}
+      <WhyUs/>
+      <Customers/>
+      <Contact/>
+      <Footer/>
+      <WhatsAppFloat/>
     </div>
   );
 }
