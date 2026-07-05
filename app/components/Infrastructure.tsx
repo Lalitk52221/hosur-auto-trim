@@ -13,11 +13,11 @@ function MachineIcon() {
   )
 }
 const INFRA = [
-  { n: 35, suf: '+', l1: 'WALKING FOOT', l2: 'MACHINES' },
+  { n: 55, suf: '+', l1: 'WALKING FOOT', l2: 'MACHINES' },
   { n: 3, suf: '', l1: 'CUTTING', l2: 'MACHINES' },
-  { n: 2, suf: '', l1: 'EMBOSSING', l2: 'MACHINES' },
-  { n: 20, suf: '+', l1: 'TWIN NEEDLE', l2: 'MACHINES' },
-  { n: 15, suf: '+', l1: 'OVERLOCK', l2: 'MACHINES' },
+  { n: 3, suf: '', l1: 'EMBOSSING', l2: 'MACHINES' },
+  { n: 3, suf: '+', l1: 'TWIN NEEDLE', l2: 'MACHINES' },
+  { n: 3, suf: '+', l1: 'OVERLOCK', l2: 'MACHINES' },
   { n: 5000, suf: '+', l1: 'SQ. FT.', l2: 'PRODUCTION AREA' },
 ]
 function useCounter(target:number, inView:boolean, duration=1800) {
