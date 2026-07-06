@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Download, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
+// import { Download } from "lucide-react";
 // import Image from "next/image";
 import Logo from "./Logo";
 
