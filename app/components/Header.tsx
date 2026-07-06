@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Download, Menu, X } from "lucide-react";
-import Image from "next/image";
+import {  Menu, X } from "lucide-react";
+// import { Download } from "lucide-react";
+// import Image from "next/image";
 import Logo from "./Logo";
 
 const NAV = [
@@ -10,7 +11,7 @@ const NAV = [
   { label: "PRODUCTS", href: "#products" },
   { label: "INFRASTRUCTURE", href: "#infrastructure" },
   { label: "CUSTOMERS", href: "#customers" },
-  { label: "GALLERY", href: "#gallery" },
+  // { label: "GALLERY", href: "#gallery" },
   { label: "CONTACT", href: "#contact" },
 ];
 
@@ -35,26 +36,26 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
         <Logo />
-        <nav className="hidden lg:flex items-center gap-4">
+        <nav className="hidden lg:flex items-center gap-7">
           {NAV.map((n) => (
             <a
               key={n.label}
               href={n.href}
-              className="text-[12px] font-semibold tracking-[0.15em] text-slate-700 hover:text-(--hat-gold) transition-colors relative group"
+              className="text-[12px] font-semibold tracking-[0.25em] text-slate-700 hover:text-yellow-700 transition-colors relative group"
             >
               {n.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-(--hat-gold) group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
         </nav>
-        <motion.a
+        {/* <motion.a
           href="#contact"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
           className="hidden md:inline-flex items-center gap-2 bg-(--hat-navy) text-white px-5 py-3 rounded-md text-[11px] font-bold tracking-[0.18em] hover:bg-(--hat-navy-dark) transition-colors shadow-lg shadow-blue-900/20"
         >
           COMPANY PROFILE <Download className="w-4 h-4" />
-        </motion.a>
+        </motion.a> */}
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden p-2 text-(--hat-navy)"
